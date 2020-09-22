@@ -35,7 +35,8 @@ class Artist
   end
   
   def self.all 
-    @@all 
+    x = @@all 
+    x 
   end 
 
   def print_songs()
