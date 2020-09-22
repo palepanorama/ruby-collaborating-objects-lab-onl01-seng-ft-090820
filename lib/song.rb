@@ -1,6 +1,7 @@
 class Song
 
   attr_accessor :name, :artist
+  @@all = []
 
   def initialize(name)
     @name = name
@@ -20,8 +21,7 @@ class Song
   end
   
   def self.all 
-    self.all.select do |song|
-      post.author == self
+    @@all 
     end 
   end 
 
