@@ -10,11 +10,11 @@ class Artist
   end
 
   def self.all
-    @@all << self 
+    @@all
   end
 
   def add_song(song)
-    @songs 
+    @songs << song
   end
 
   def self.find_or_create_by_name(name)
