@@ -35,7 +35,7 @@ class Artist
   end
   
   def self.all 
-    x = @@all 
+    x = @@all << self 
     x 
   end 
 
