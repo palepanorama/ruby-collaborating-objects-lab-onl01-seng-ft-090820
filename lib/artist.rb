@@ -9,10 +9,6 @@ class Artist
     @songs = [] 
   end
 
-  def self.all
-    @@all
-  end
-
   def add_song(song)
     @songs << song
   end
@@ -37,6 +33,10 @@ class Artist
     @@all << artist
     artist
   end
+  
+  def self.all 
+    @@all 
+  end 
 
   def print_songs()
     puts @songs.collect {|x| x.name}
