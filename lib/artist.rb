@@ -35,8 +35,8 @@ class Artist
   end
   
   def self.all 
-    x = @@all << self 
-    x 
+    @@all << artist 
+    
   end 
 
   def print_songs()
